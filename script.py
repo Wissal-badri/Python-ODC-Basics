@@ -1,7 +1,7 @@
 #Afficchage un message simple
 print("Hello, ODC!")
 
-#Variables 
+#Variables
 
 #camelCase notation
 #nomEtudiant= "Wissal"
@@ -12,7 +12,7 @@ print("Hello, ODC!")
 #Pas de notation
 #nometudiant= "Wissal"
 
-#Exemple 
+#Exemple
 # Prix_casquette= 20
 # print("Le prix de la casquette est de", Prix_casquette, "Dirham")
 
@@ -57,15 +57,90 @@ print("Hello, ODC!")
 
 #La concatenation des chaines de caractères String
 # prenom= input("Entrez votre prénom: ")
-# nom= input("Entrez votre nom: ") 
+# nom= input("Entrez votre nom: ")
 # print("Bonjour, " + prenom + " " + nom + "!")
 
 # #La repetition des chaines de caractères String
 # message= "Bienvenue à ODC! "
-# print( message * 3)    
+# print( message * 3)
 
 #La comparaison des valeurs
-A= 10
-B= 20   
-print("A est égal à B:", A == B)
-print("A est différent de B:", A != B)  
+# A= 10
+# B= 20
+# print("A est égal à B:", A == B)
+# print("A est différent de B:", A != B)
+# print("A est supérieur à B:", A > B)
+# print("A est inférieur à B:", A < B)
+
+#Exercice
+# x,y,z= 5,10,15
+# print("x est le plus grand:", x > y and x > z)
+# print("y est le plus grand:", y > x and y > z)
+# print("z est le plus grand:", z > x and z > y)
+# print("Au moins un des nombres est supérieur à 12:", x > 12 or y > 12 or z > 12)
+
+# print(x>z)
+# print((y-5)==x)
+
+#Les fonctions intégrées
+# nom="Wissal"
+# print(nom.upper())
+# print(nom.lower())
+# print("La longueur de", nom, "est:", len(nom))
+# print("La position de 's' dans", nom, "est:", nom.index("s"))
+
+#Booleans et conditions
+# age= int(input("Entrez votre âge: "))
+# if age >= 18:
+#     print("Vous êtes majeur.")
+# else:
+#     print("Vous êtes mineur.")
+
+# #And Or Not
+# temperature= int(input("Entrez la température actuelle: "))
+# if temperature > 30 and temperature <= 40:
+#     print("Il fait chaud.")
+# elif temperature > 20 and temperature <= 30:
+#     print("Il fait doux.")
+# elif temperature >= 10 and temperature <= 20:
+#     print("Il fait frais.")
+
+# #Or
+# elif temperature < 10 or temperature > 40:
+#     print("Température extrême.")
+# else:
+#     print("Température normale.")
+
+#Traitement conditionnel en python
+#if condition1:
+# x=5
+# if x > 0:
+#     print("x est un nombre positif.")
+# if x < 2 :
+#     print("x est inférieur à 2.")
+# if x % 2 == 1:
+#     print("x est un nombre impair.")
+# if x == 0 :
+#     print("x est égal à 0.")
+
+#Exercice
+num1= int(input("Entrez le premier nombre: "))
+num2= int(input("Entrez le deuxième nombre: "))
+operation= input("Entrez l'opération (+, -, *, /): ")
+if operation == "+":
+    resultat= num1 + num2
+    print("Le résultat de l'addition est:", resultat)
+elif operation == "-":
+    resultat= num1 - num2
+    print("Le résultat de la soustraction est:", resultat)
+elif operation == "*":
+    resultat= num1 * num2
+    print("Le résultat de la multiplication est:", resultat)
+elif operation == "/":
+    if num2 != 0:
+        resultat= num1 / num2
+        print("Le résultat de la division est:", resultat)
+    else:
+        print("Erreur: Division par zéro.")
+else:
+    print("Opération non reconnue.")
