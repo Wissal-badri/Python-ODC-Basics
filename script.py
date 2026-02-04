@@ -128,19 +128,28 @@ num1= int(input("Entrez le premier nombre: "))
 num2= int(input("Entrez le deuxième nombre: "))
 operation= input("Entrez l'opération (+, -, *, /): ")
 if operation == "+":
-    resultat= num1 + num2
-    print("Le résultat de l'addition est:", resultat)
+     resultat= num1 + num2
+     print("Le résultat de l'addition est:", resultat)
 elif operation == "-":
-    resultat= num1 - num2
-    print("Le résultat de la soustraction est:", resultat)
+     resultat= num1 - num2
+     print("Le résultat de la soustraction est:", resultat)
 elif operation == "*":
-    resultat= num1 * num2
-    print("Le résultat de la multiplication est:", resultat)
+#     resultat= num1 * num2
+     print("Le résultat de la multiplication est:", resultat)
 elif operation == "/":
-    if num2 != 0:
-        resultat= num1 / num2
-        print("Le résultat de la division est:", resultat)
-    else:
-        print("Erreur: Division par zéro.")
+     if num2 != 0:
+         resultat= num1 / num2
+         print("Le résultat de la division est:", resultat)
+     else:
+         print("Erreur: Division par zéro.")
 else:
     print("Opération non reconnue.")
+
+# if else condition2:
+# Demander à l'utilisateur d'entrer un nombre
+nombre = int(input("Entrez un nombre : "))
+
+if nombre % 2 == 0:
+    print("Le nombre est pair")
+else:
+    print("Le nombre est impair")
