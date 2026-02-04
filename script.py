@@ -60,3 +60,12 @@ print("Hello, ODC!")
 # nom= input("Entrez votre nom: ") 
 # print("Bonjour, " + prenom + " " + nom + "!")
 
+# #La repetition des chaines de caractères String
+# message= "Bienvenue à ODC! "
+# print( message * 3)    
+
+#La comparaison des valeurs
+A= 10
+B= 20   
+print("A est égal à B:", A == B)
+print("A est différent de B:", A != B)  
