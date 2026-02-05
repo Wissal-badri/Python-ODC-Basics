@@ -217,4 +217,5 @@ else:  # age >= 18
     # Appliquer la réduction étudiant
     if carte == "oui":
         prix -= 20
+        
 print("Le prix du billet est de :", prix, "DH")
