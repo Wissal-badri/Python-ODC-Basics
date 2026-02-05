@@ -194,28 +194,34 @@
 
 #Exercice : Système de gestion des tickets de cinéma
 
-print("--- Système de gestion des tickets de cinéma ---")
-# 1. Demander l'âge
-age = int(input("Veuillez entrer votre âge : "))
-# 2. Demander la carte d'étudiant
-carte = input("Avez-vous une carte d'étudiant ? (oui/non) : ")
-# 3. Demander l'horaire
-horaire = input("Quelle est l'horaire de la séance ? (matin, après-midi ou soir) : ")
-prix = 0
-if age < 12:
-    prix = 50
-elif 12 <= age <= 17:
-    if carte == "oui":
-        prix = 50
-    else:
-        prix = 70
-else:  # age >= 18
-    if horaire == "soir":
-        prix = 120
-    else:
-        prix = 100
-    # Appliquer la réduction étudiant
-    if carte == "oui":
-        prix -= 20
-        
-print("Le prix du billet est de :", prix, "DH")
+# 
+#Les boucles en python
+# #Boucle While 
+# i=0
+# while i < 5:
+#     print("ODC")
+#     i += 1
+
+# #Boucle For
+# for i in range(5):
+#     print("Bojour")
+# print("Fin de la boucle for")
+
+# #Boucle for range plusireurs paramètres
+# x=range (2,10,2) #de 2 à 10 avec un pas de 2
+# for i in range(2,10,2):
+#     print(i) 
+# print("Fin de la boucle for avec plusieurs paramètres")
+
+# Exercice : Affichage de la table de multiplication
+# 1. Demandez à l'utilisateur d'entrer un nombre
+nombre = int(input("Entrez un nombre : "))
+
+# 2. Utilisez une boucle for pour faire la multiplication de 1 à 10
+print("Table de multiplication de", nombre, ":")
+for i in range(1, 11):
+    # 3. Calculez le produit
+    produit = nombre * i
+    # 4. Affichez le résultat dans un format lisible
+    print(nombre, "x", i, "=", produit)
+
